@@ -15,7 +15,7 @@ To use it, make a copy of your css file and rename it to "site.css"
 Then do this:
 
 ```
-php invert.php 
+php css-invert.php 
 ``` 
 
 That's all! Your site.css colors are all now inverted. 
