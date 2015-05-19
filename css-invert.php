@@ -3,7 +3,7 @@
 <?php
 
 //$file=fopen("./site.css","r");
-$file="./site.css";
+$file="./invert-me.css.css";
 
 
 function inverseColors($css) {
