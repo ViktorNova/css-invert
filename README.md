@@ -10,7 +10,7 @@ This was inspired by the Hacker Vision plugin, which does the same thing, only t
 This was adapted from code I found in a post here, after searching forever for something like this
 http://stackoverflow.com/questions/2040848/automatically-convert-css-file-to-be-used-on-dark-backgrounds
 
-To use it, make a copy of your css file and rename it to "site.css"
+To use it, make a copy of your css file ** and rename it to "invert-me.css"**
 
 Then do this:
 
