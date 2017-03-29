@@ -29,7 +29,7 @@ file_put_contents($fileout, inverseColors(file_get_contents($filein)));
 }
 else
 {
-    echo "USAGE:\n php css-invert.php <filein.php> <fileout.php> [-h] [--help] OR ./css-invert.php <filein.php> <fileout.php> [-h] [--help]\n\n Flags -h, --help for this help dialog"
+    echo "USAGE:\n php css-invert.php <filein.php> <fileout.php> [-h] [--help] OR ./css-invert.php <filein.php> <fileout.php> [-h] [--help]\n\n Flags -h, --help for this help dialog";
 }
     
 ?>
