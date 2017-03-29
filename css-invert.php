@@ -2,10 +2,13 @@
 
 <?php
 
+if(!(in_array("help", $argv) || in_array("-h", $argv)) && $argc>=3)
+{
+
 //$file=fopen("./site.css","r");
-$file="./invert-me.css.css";
-
-
+$filein=$argv[$argc-2];
+$fileout=$argv[$argc-1];
+//The whole argc-n is a little hack to make this work using both "php css-invert.php filein.css fileout.css" and "./css-invert.php filein.css fileout.css"
 function inverseColors($css) {
     preg_match_all('/#([a-f0-9]{6}|[a-f0-9]{3})/i', $css, $matches);
     $original = $matches[0];
@@ -22,6 +25,8 @@ function inverseColors($css) {
     echo $css;
 }
 
-file_put_contents($file, inverseColors(file_get_contents($file)));
-
+file_put_contents($fileout, inverseColors(file_get_contents($filein)));
+}
+else
+    
 ?>
